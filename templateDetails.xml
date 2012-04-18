@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade">
-	<name>templatename</name>
-	<creationDate>xxxx-xx-xx</creationDate>
-	<author>your name</author>
-	<copyright>Copyright © xxxx example.com</copyright>
-	<authorEmail>your.name@example.com</authorEmail>
-	<authorUrl>http://www.example.com</authorUrl>
+	<name>DEVTECSite</name>
+	<creationDate>2012-04-18</creationDate>
+	<author>DEVTEC</author>
+	<copyright>Copyright © 2012 devtec.com.br</copyright>
+	<authorEmail>developer@devtec.com.br</authorEmail>
+	<authorUrl>http://www.devtec.com.br</authorUrl>
 	<version>1.0.0</version>
 	<description><![CDATA[
 		<h1>templatename</h1>
@@ -18,7 +18,7 @@
 			<li>footer</li>
 			<li>debug</li>
 		</ol>
-		<p>Created by <a href="http://www.example.com" target="_blank">your name | example.com</a>.</p>
+		<p>Created by <a href="http://devtec.com.br" target="_blank">DEVTEC | devtec.com.br</a>.</p>
 	]]></description>
 	
 	<files>
@@ -40,8 +40,7 @@
 	</files>
 	
 	<languages folder="language">
-		<language tag="de-DE">de-DE.tpl_templatename.ini</language>
-		<language tag="en-GB">en-GB.tpl_templatename.ini</language>
+		
 	</languages>
 	
 	<positions>

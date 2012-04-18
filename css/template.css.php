@@ -1,9 +1,9 @@
 <?php 
 /*------------------------------------------------------------------------
-# author    your name or company
-# copyright Copyright © 2011 example.com. All rights reserved.
-# @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-# Website   http://www.example.com
+# author    DEVTEC
+# copyright Copyright © 2012 devtec.com.br All rights reserved.
+# @license  COMERCIAL
+# Website   http://www.devtec.com
 -------------------------------------------------------------------------*/
 
 /* initialize ob_gzhandler to send and compress data */
