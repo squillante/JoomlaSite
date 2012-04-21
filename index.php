@@ -9,22 +9,32 @@
  */
 
 // no direct access
-//defined('_JEXEC') or die ('Restricted access');
+defined('_JEXEC') or die ('Restricted access');
 
 ?>
-<!--    
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" 
-      xml:lang="<?php// echo $this->language;?>"
-      lang="<?php// echo $this->language;?>   ">
-/-->
+      xml:lang="<?php echo $this->language;?>"
+      lang="<?php echo $this->language;?>   ">
+
 <html>
     <head>
-        <title></title>
-        <link rel="stylesheet" href="css/reset.css" />        
-        <link rel="stylesheet" href="css/960_24_col.css" />
+        <jdoc:include type="head"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" media="screen"
+                href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template?>/css/reset.css"/>        
+        
+        <link rel="stylesheet" type="text/css" media="screen"
+                href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template?>/css/960_24_col.css"/>        
+             
+        <link rel="stylesheet" type="text/css" media="screen"
+                href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template?>/css/template.css"/>        
+             
+        <link rel="shortcut icon" 
+              href="<?php echo "$GLOBALS[mosConfig_live_site]/templates/$GLOBALS[cur_template]/favicon.ico"; ?>"/>
         
     </head>
     <body>
@@ -32,60 +42,66 @@
         <div class="container_24" id="wrapper">
             
             <div class="grid_7" id="toolbar">
-                Nav
+                <jdoc:include type="modules" name="toolbar"/>
             </div>
             
             <div class="grid_7" id="user1">
-                Rede Sociais
+                <jdoc:include type="modules" name="user1"/>
             </div>
             
             <div class="grid_7" id="search">
-                Buscar
+                <jdoc:include type="modules" name="search"/>
             </div>
             
             <div class="clear"></div>
             
             <div class="grid_24" id="inset">
-                <img src="images/devtec_blue.png"/>
+                <jdoc:include type="modules" name="inset"/>
             </div>
             
             <div class="clear"></div>
             
             <div class="grid_24" id="mainnav">
-                Main Nav
+                <jdoc:include type="modules" name="mainnav"/>
             </div>
             
             <div class="clear"></div>
             
+            <?php if($this->countModules('user2')): ?>
             <div class="grid_12" id="user2">
-                Prop1
+                <jdoc:include type="modules" name="user2"/>
             </div>
+            <?php endif;?>
             
+            <?php if($this->countModules('user3')): ?>
             <div class="grid_8" id="user3">
-                Prop2
+                <jdoc:include type="modules" name="user3"/>
             </div>
+            <?php endif; ?>
             
+            <?php if($this->countModules('user4')): ?>
             <div class="grid_4" id="user4">
-                <div>Prop3.1</div>
-                <div>Prop3.2</div>                
+                <div><jdoc:include type="modules" name="user4"/></div>
+                <div><jdoc:include type="modules" name="user5"/></div>                
             </div>
+            <?php endif; ?>
                                     
             <div class="clear"></div>
             
-            <div class="grid_24" id="components">
-                Components
+            <div class="grid_24" id="component">
+                <jdoc:include type="component"/>
             </div>
             
             <div class="clear"></div>
             
             <div class="grid_24" id="footer">
-                Footer
+                <jdoc:include type="modules" name="footer"/>
             </div>
             
             <div class="clear"></div>
             
             <div class="grid_24" id="copyright">
-                Copyright
+                <jdoc:include type="modules" name="copyright"/>
             </div>
             
             

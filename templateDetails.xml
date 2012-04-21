@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>devtecMain</name>
+	<creationDate>April 2012</creationDate>
+	<author>DEVTEC</author>
+	<authorEmail>developer@devtec.com.br</authorEmail>
+	<authorUrl>http://devtec.com.br</authorUrl>
+	<copyright>Copyright (C) 2012 All rights reserved.</copyright>
+	<license>Commercial</license>
+	<version>2.5.0</version>
+	<description>TPL_DEVTEC_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+
+	<positions>
+		<position>header</position>
+		<position>toolbar</position>
+		<position>inset</position>
+		<position>search</position>
+		<position>mainnav</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>footer</position>
+		<position>copyright</position>		
+	</positions>
+
+	
+</extension>
